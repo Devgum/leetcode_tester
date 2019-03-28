@@ -6,8 +6,8 @@ with open("README.md", "r", encoding='utf-8') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="leetcode_tester-Devgum",
-    version="1.0.0",
+    name="leetcode_tester",
+    version="1.0.1",
     author="Devgum",
     author_email="devgum@foxmail.com",
     description="Local tester for Leetcode.",
