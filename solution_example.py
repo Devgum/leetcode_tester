@@ -2,18 +2,19 @@
 
 from leetcode_tester import Tester
 
-class SolutionExample():
+
+class Solution():
     def sfc(self, *args):
         # TODO: write your code here
-        # Example: 
+        # Example:
         return sum(args)
 
 
 if __name__ == '__main__':
-    solution = SolutionExample()
+    solution = Solution()
     test = Tester(solution.sfc)
     # TODO: add test case here
-    # Example: 
+    # Example:
     test.addTest(1, 2, 3)
     test.addTest(2, 4, 6)
     test.doTest()
