@@ -4,7 +4,7 @@
 
 # 使用方法
 
-可以参见示例
+可以参见示例: 
 
 ```
 from leetcode_tester.tester import Tester
@@ -28,3 +28,17 @@ if __name__ == '__main__':
 ```
 
 Solution类可以选择从Leetcode的编辑器中复制而来。当然，有些额外的特殊类型，还是需要自己补充。
+
+结果输出示例: 
+
+```
+Test: 
+Args:[(1, 2)] 
+Expect: [3] 
+Result: [3] 
+Succeed: [True] 
+==============
+Test finished. [0] failed. [1] succeed.
+doTest cost: [0.0]
+
+```
