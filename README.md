@@ -23,6 +23,7 @@ if __name__ == '__main__':
     # TODO: add test case here
     # Example: 
     test.addTest(1, 2, 3)
+    test.addTest(2, 4, 6)
     test.doTest()
 
 ```
@@ -33,13 +34,19 @@ Tester的addTest方法用于添加用例，最后一个入参会被作为期待�
 ## 输出示例
 
 ```
-Test: 
-Args:[(1, 2)] 
+Test [0]: 
+Args: [(1, 2)] 
 Expect: [3] 
 Result: [3] 
 Succeed: [True] 
 ==============
-Test finished. [0] failed. [1] succeed.
+Test [1]: 
+Args: [(2, 4)] 
+Expect: [6] 
+Result: [6] 
+Succeed: [True] 
+==============
+Test finished. [0] failed. [2] succeed.
 doTest cost: [0.0]
 
 ```

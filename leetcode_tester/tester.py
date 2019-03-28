@@ -29,7 +29,7 @@ class Tester():
             expect = self.expect[i]
             result = self.solution_func(*args)
             print(
-                f'Test: \nArgs:[{args}] \nExpect: [{expect}] \nResult: [{result}] \nSucceed: [{result == expect}] \n==============')
+                f'Test [{i}]: \nArgs: [{args}] \nExpect: [{expect}] \nResult: [{result}] \nSucceed: [{result == expect}] \n==============')
             if result != expect:
                 failed += 1
         print(

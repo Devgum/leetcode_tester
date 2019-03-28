@@ -14,4 +14,5 @@ if __name__ == '__main__':
     # TODO: add test case here
     # Example: 
     test.addTest(1, 2, 3)
+    test.addTest(2, 4, 6)
     test.doTest()
