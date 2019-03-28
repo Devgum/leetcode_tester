@@ -1,3 +1,5 @@
+# coding:utf-8
+
 from leetcode_tester.tester import Tester
 
 
