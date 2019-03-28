@@ -10,7 +10,7 @@ with open("README.md", "r", encoding='utf-8') as fh:
 
 setuptools.setup(
     name="leetcode_tester",
-    version="1.0.1",
+    version="1.0.2",
     author="Devgum",
     author_email="devgum@foxmail.com",
     python_requires=REQUIRES_PYTHON,
