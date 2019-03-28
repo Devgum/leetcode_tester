@@ -7,8 +7,7 @@
 ## 使用示例
 
 ```
-from leetcode_tester.tester import Tester
-
+from leetcode_tester import Tester
 
 class SolutionExample():
     def sfc(self, *args):
