@@ -4,7 +4,7 @@
 
 # 使用方法
 
-可以参见示例: 
+## 使用示例
 
 ```
 from leetcode_tester.tester import Tester
@@ -28,8 +28,9 @@ if __name__ == '__main__':
 ```
 
 Solution类可以选择从Leetcode的编辑器中复制而来。当然，有些额外的特殊类型，还是需要自己补充。
+Tester的addTest方法用于添加用例，最后一个入参会被作为期待结果，之前的参数会被作为入参传入Solution方法。
 
-结果输出示例: 
+## 输出示例
 
 ```
 Test: 
