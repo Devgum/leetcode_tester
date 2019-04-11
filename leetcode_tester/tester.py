@@ -1,6 +1,7 @@
 # coding:utf-8
 
 import time
+from operator import eq
 
 
 def timer(func):
@@ -30,9 +31,13 @@ class Tester():
             args = self.test_args[i]
             expect = self.expect[i]
             result = self.solution_func(*args)
-            print(
-                f'Test [{i}]: \nArgs: [{args}] \nExpect: [{expect}] \nResult: [{result}] \nSucceed: [{result == expect}] \n==============')
+            print(f'Test [{i}]:')
+            print(f"Args: [{', '.join(str(arg) for arg in args)}]")
+            print(f'Expect: [{expect}]')
+            print(f'Result: [{result}]')
+            print(f'Succeed: [{eq(result, expect)}]')
+            print(f'==============')
             if result != expect:
                 failed += 1
-        print(
-            f'Test finished. [{failed}] failed. [{len(self.expect) - failed}] succeed.')
+        print(f'Test finished.')
+        print(f'[{failed}] failed. [{len(self.expect) - failed}] succeed.')
