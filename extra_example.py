@@ -32,7 +32,7 @@ class ListNode:
         return self.val.__eq__(node.val) and self.next.__eq__(node.next)
 
     @classmethod
-    def init_with_list(self, value_list):
+    def init_with_list(cls, value_list):
         '''
         用于快速创建链表
         以便创建用例
