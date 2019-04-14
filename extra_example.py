@@ -1,11 +1,12 @@
 # coding:utf-8
 
 from leetcode_tester import Tester
-
+# from leetcode_tester import ListNode
 
 class ListNode:
     '''
-    如果涉及特殊类型，需要自定义
+    常见类型，会逐步整合，将可以直接import
+    但如果涉及未整合的特殊类型，需要自定义
     '''
 
     def __init__(self, x):
