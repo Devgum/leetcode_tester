@@ -30,10 +30,10 @@ class Tester():
         for i in range(len(self.expect)):
             args = self.test_args[i]
             expect = self.expect[i]
-            result = self.solution_func(*args)
             print(f'Test [{i}]:')
             print(f"Args: [{', '.join(str(arg) for arg in args)}]")
             print(f'Expect: [{expect}]')
+            result = self.solution_func(*args)
             print(f'Result: [{result}]')
             print(f'Succeed: [{eq(result, expect)}]')
             print(f'==============')
