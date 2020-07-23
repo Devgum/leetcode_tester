@@ -1,53 +1,7 @@
 # coding:utf-8
 
-from leetcode_tester import Tester
+from leetcode_tester import Tester, ListNode
 # from leetcode_tester import ListNode
-
-class ListNode:
-    '''
-    常见类型，会逐步整合，将可以直接import
-    但如果涉及未整合的特殊类型，需要自定义
-    '''
-
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-    def __str__(self):
-        '''
-        实现特殊类型的__str__方法
-        以便可以更好地在结果中进行展示
-        '''
-        result = f'{self.val}'
-        if self.next:
-            result = f'{result} -> {self.next}'
-        return result
-
-    def __eq__(self, node):
-        '''
-        若结果也是特殊类型
-        需要实现__eq__方法
-        '''
-        if not isinstance(node, self.__class__):
-            return False
-        return self.val.__eq__(node.val) and self.next.__eq__(node.next)
-
-    @classmethod
-    def init_with_list(cls, value_list):
-        '''
-        用于快速创建链表
-        以便创建用例
-        '''
-        if not value_list:
-            return None
-        if not isinstance(value_list, list):
-            return ListNode(value_list)
-        root_node = ListNode(value_list[0])
-        pre_node = root_node
-        for value in value_list[1:]:
-            pre_node.next = ListNode(value)
-            pre_node = pre_node.next
-        return root_node
 
 
 class Solution:

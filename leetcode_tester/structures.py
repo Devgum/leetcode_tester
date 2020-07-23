@@ -39,4 +39,3 @@ class ListNode(Node):
             pre_node.next = ListNode(value)
             pre_node = pre_node.next
         return root_node
-
