@@ -18,8 +18,10 @@ class CaseStatus(Enum):
 
 class Case:
     def __init__(self, *args):
+        if len(args) < 1:
+            raise Exception(f'Invalid Case.')
         self.case_args = list(args[:-1])
-        self._case_args_str = ', '.join([str(arg) for arg in args])
+        self._case_args_str = ', '.join([str(arg) for arg in args[:-1]])
         self.expect = args[-1]
         self.result = None
         self.status = CaseStatus.PENDING
