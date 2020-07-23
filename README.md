@@ -58,18 +58,8 @@ doTest cost: [0.0]
 
 ```
 
-# 更新日志
-
-## 1.0.3
-
-> 优化了结果展示。
-
->> 现在可以在结果中正确展示非基本类型的入参，只要引入非基本类型时，实现它的__str__方法
-
 # TODO
 
 > 持续整理LeetCode中遇到的额外类型，例如：ListNode、TreeNode，并将其固化在这个包里以供用户直接使用。  
-> 目前统计测试时间的方式有不妥，应该按用例分别统计，且只计算Solution方法的耗时。  
-> 用例应该并发执行，然后汇总结果。  
 
 [pypi_version]: https://img.shields.io/pypi/v/leetcode-tester.svg?style=flat
