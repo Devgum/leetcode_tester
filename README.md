@@ -41,21 +41,21 @@ Tester的addTest方法用于添加用例，最后一个入参会被作为期待�
 ## 输出示例
 
 ```
-Test [0]: 
-Args: [(1, 2)] 
-Expect: [3] 
-Result: [3] 
-Succeed: [True] 
-==============
-Test [1]: 
-Args: [(2, 4)] 
-Expect: [6] 
-Result: [6] 
-Succeed: [True] 
-==============
-Test finished. [0] failed. [2] succeed.
-doTest cost: [0.0]
+Input: [1, 2, 3]
+Expect: [3]
+Result: [3]
+Status: [RIGHT]
+Exception: [None]
+Cost: [7.152557373046875e-06]
 
+Input: [2, 4, 6]
+Expect: [6]
+Result: [6]
+Status: [RIGHT]
+Exception: [None]
+Cost: [3.0994415283203125e-06]
+
+{'TOTAL': 2, 'RIGHT': 2, 'WRONG': 0, 'EXCEPTION': 0, 'TOTAL_COST': 1.0251998901367188e-05}
 ```
 
 # TODO
