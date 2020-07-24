@@ -5,7 +5,7 @@ import asyncio
 from enum import Enum
 from operator import eq
 from functools import partial
-from concurrent.futures import ProcessPoolExecutor
+from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
 
 
 class CaseStatus(Enum):
@@ -85,9 +85,15 @@ class Tester:
     def __init__(self, solution_func, process_pool_size: int = None):
         self.solution_func = solution_func
         if process_pool_size:
-            self.executor = ProcessPoolExecutor(process_pool_size)
+            try:
+                self.executor = ProcessPoolExecutor(process_pool_size)
+            except:
+                self.executor = ThreadPoolExecutor(process_pool_size)
         else:
-            self.executor = ProcessPoolExecutor()
+            try:
+                self.executor = ProcessPoolExecutor()
+            except:
+                self.executor = ThreadPoolExecutor()
         self.cases = []
 
     def addTest(self, *args):
