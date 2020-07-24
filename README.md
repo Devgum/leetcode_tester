@@ -1,8 +1,8 @@
 ![img][pypi_version]
 
-# leetcode_tester
-在leetcode做题时，感觉提交代码时，效率受制于网络。Leetcode的编辑器环境也不是很顺手，常常急躁提交留下失败的提交记录。
-遂简单写了个本地测试框架，方便在本地进行测试。
+# leetcode-tester
+leetcode-tester是一个简单的leetcode辅助工具。让你在做题的时候，可以更关注解法和用例本身。
+
 
 # 安装方法
 ```
@@ -41,14 +41,14 @@ Tester的addTest方法用于添加用例，最后一个入参会被作为期待�
 ## 输出示例
 
 ```
-Input: [1, 2, 3]
+Input: [1, 2]
 Expect: [3]
 Result: [3]
 Status: [RIGHT]
 Exception: [None]
 Cost: [7.152557373046875e-06]
 
-Input: [2, 4, 6]
+Input: [2, 4]
 Expect: [6]
 Result: [6]
 Status: [RIGHT]
