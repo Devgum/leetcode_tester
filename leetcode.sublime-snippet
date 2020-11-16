@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+# coding:utf-8
+
+from leetcode_tester import *
+
+
+class Solution:
+    def ${1:func_name}(self, ${2:args}):
+        pass
+
+
+if __name__ == '__main__':
+    solution = Solution()
+    tester = Tester(solution.${1:func_name})
+    tester.addTest(${3:test case})
+    tester.doTest()
+
+]]></content>
+    <tabTrigger>leetcode</tabTrigger>
+    <scope>source.python</scope>
+</snippet>

@@ -5,3 +5,5 @@ dist/*
 *.egg-info/*
 *.sublime-*
 .DS_Store
+!/leetcode.sublime-snippet
+
